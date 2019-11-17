@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2.title= title
+  form#fileUpload(method="post" action="/uploads/upload" enctype="multipart/form-data")
+    .custom-file.mb-4
+      input#payload.custom-file-input(type="file" name="myFile" accept=".csv")
+      label.custom-file-label(for="payload") Choose file
+    br
+    button#upload.btn.btn-info Upload

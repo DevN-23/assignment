@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
