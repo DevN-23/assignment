@@ -1,4 +1,7 @@
 $(function() {
+    setTimeout(function() {
+        $('#upload-success').remove();
+    }, 1200);
     $('.edit-user').on('click', function() {
         var id = $(this).attr('data-id');
         var name = $('#td-name-'+id).text().trim();
