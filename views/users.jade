@@ -1,7 +1,11 @@
 extends layout
 
 block content
-    h2.title= title +' ('+ users.length +')'
+    .d-flex.justify-content-between
+        h2.title= title +' ('+ users.length +')'
+        .d-flex.align-items-center
+            a.btn.btn-primary.mr-2(href="/users/download-csv") Export CSV
+            a.btn.btn-primary.ml-2(href="/users/download-excel") Export Excel
     #alert-success.alert.alert-success(role="alert" style="display:none;")
     table.table
         tr
