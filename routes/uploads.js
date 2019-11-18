@@ -23,7 +23,7 @@ router.post('/upload', cpUpload, function(req, res, next) {
                 res.end('Got your file!');
             }
             else {
-                res.end('Well, there is no magic for those who don\'t believe in it!');
+                res.render('upload', { title: 'Upload File', message: 'Success! File Uploaded.' });   
             }
         });
     }
